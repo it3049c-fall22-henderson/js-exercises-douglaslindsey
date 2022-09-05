@@ -7,7 +7,18 @@
  *    if no number was provided or if the value provided wasn't a number (hint: typeof), return false
  */
 function fizzBuzz(num) {
-  
+if (parseInt(num) % 3 == 0 && parseInt(num) % 5 == 0) //check to number is divisible by 3 and 5
+console.log("");
+//return "fizzbuzz";
+else if (parseInt(num) % 3 === 0)
+return "fizz";
+else if (parseInt(num) % 5 === 0)
+return "buzz";
+else if (Number.isInteger(num))
+console.log("");
+// return false;
+else
+return num;
 }
 
 module.exports = {
